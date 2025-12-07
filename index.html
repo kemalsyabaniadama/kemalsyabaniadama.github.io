@@ -85,10 +85,12 @@
         </div>
     </div>
     <div class="fixed right-4 top-4">
-        <button aria-label='Toggle Tema' class='p-2 transition-all dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-300 flex right-1 top-1' id='theme-toggle' onclick='cycleTheme()'>
-            <i class='fas fa-desktop' id='theme-icon'></i>
-            <span class='sr-only'>Toggle Tema</span>
-        </button>
+        <div class="p-1 rounded-full transition-colors bg-gray-800/40 backdrop-blur-sm">
+            <button aria-label='Toggle Tema' class='p-2 transition-all text-white hover:text-blue-600 dark:hover:text-blue-300 flex right-1 top-1' id='theme-toggle' onclick='cycleTheme()'>
+                <i class='fas fa-desktop' id='theme-icon'></i>
+                <span class='sr-only'>Toggle Tema</span>
+            </button>
+        </div>
     </div>
     <div class="navpc bg-white/0 fixed top-3 h-12 w-[100%] max-w-[380px]">
         <div class="type justify-center text-center gap-[5em] space-x-3 p-0.5 rounded-full transition-colors bg-gray-800/40 backdrop-blur-sm">
@@ -114,13 +116,14 @@
                     class="fa-solid fa-envelope"></i> Email</a>
         </div>
         <br><br><br><br class="hidden cokk">
-        <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[2em]">
+        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
             <a id="Tentang"></a>
             <div class="text-center text-2xl font-bold dark:text-white">Tentang</div><br>
             <div class="text-justify text-gray-900 dark:text-gray-100">Saya adalah pelajar SMKN 69 Jakarta, jurusan SIJA (Sistem Informatika Jaringan dan
                 Aplikasi). Saya memiliki ketertarikan pada pengembangan web Front-End dan pengelolaan data. </div>
         </div>
         <br><br>
+        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
         <div class="text-center text-2xl font-bold dark:text-white">Bahasa dan Tools <br>
         </div><br>
         <div class="type justify-center text-center gap-[5em] space-x-2 border-spacing-y-1 h-1">
@@ -133,35 +136,47 @@
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Node.js</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Tailwind</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Figma</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">VS Code</a>
+            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">VSCode</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">AWS</a>
         </div><br><br><br><br><br><br>
-        <div class="text-center text-2xl font-bold dark:text-white">Timeline<br>
+        <div class="text-center text-2xl font-bold dark:text-white">Pendidikan<br>
     </div><br>
     <table>
         <tr>
-            <td class="text-gray-900 dark:text-gray-100">2022</td>
+            <td class="text-gray-900 dark:text-gray-100">2016</td>
             <td class="px-5 text-gray-900 dark:text-gray-100">
                 <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                    <span class="text-2xl font-bold dark:text-white">2019</span>
-                    <div class="text-justify text-gray-900 dark:text-gray-100">
-                        Awal mula tertarik dengan dunia teknologi <br> Eksplorasi ADB dan membuat APK menggunakan Sketchware
+                    <span class="text-xl font-bold dark:text-white">SDN Pondok Kelapa 05</span>
+                    <div class="text-gray-900 dark:text-gray-100">
+                        Belajar teknologi melalui mata pelajaran TIK, mulai memperbanyak relasi
                     </div>
                 </div><br>
             </td>
         </tr>
         <tr>
-            <td class="text-gray-900 dark:text-gray-100">2023</td>
+            <td class="text-gray-900 dark:text-gray-100">2021</td>
             <td class="px-5 text-gray-900 dark:text-gray-100">
                 <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                    <span class="text-2xl font-bold dark:text-white">2021</span><span class="text-justify text-xs text-gray-900 dark:text-gray-100">         SMPN 194 Jakarta</span>
-                    <div class="text-justify text-gray-900 dark:text-gray-100">
-                        Awal mula tertarik dengan dunia teknologi <br> Eksplorasi ADB dan membuat APK menggunakan Sketchware
+                    <span class="text-xl font-bold dark:text-white">SMPN 194 Jakarta</span>
+                    <div class="text-gray-900 dark:text-gray-100">
+                        Belajar teknologi melalui mata pelajaran TIK, mulai memperbanyak relasi, dan ambisi untuk jenjang berikutnya
+                    </div>
+                </div><br>
+            </td>
+        </tr>
+        <tr>
+            <td class="text-gray-900 dark:text-gray-100">2024</td>
+            <td class="px-5 text-gray-900 dark:text-gray-100">
+                <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+                    <span class="text-xl font-bold dark:text-white">SMKN 69 Jakarta</span>
+                    <div class="text-gray-900 dark:text-gray-100">
+                        Di sini semuanya dimulai, belajar banyak hal tentang dunia IT, berorganisasi, hingga mengelola pikiran dan waktu
                     </div>
                 </div>
             </td>
         </tr>
     </table>
+    </div>
     </div>
     
 </body>
