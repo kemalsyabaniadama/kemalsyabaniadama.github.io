@@ -63,15 +63,15 @@
             }
         }
 
-        .navpc a.active,
-        .navmob a.active {
+        .navmob a.active,
+        .navpc a.active {
             background-color: white;
             color: black;
             border-radius: 9999px;
         }
 
         .type {
-            line-height: 3em;
+            line-height: 3em;   
         }
 
         div nav a:hover {
@@ -82,7 +82,7 @@
     </style>
 </head>
 
-<body class="justify-center items-center flex dark:bg-gray-900 transition-colors">
+<body class="justify-center items-center flex bg-gray-100 dark:bg-gray-900 transition-colors">
     <div class="navmob md:hidden bg-white/0 fixed bottom-3 h-12 w-[100%] max-w-[230px]">
         <div class="type justify-center text-center gap-[15%] space-x-3 p-0.5 rounded-full transition-colors bg-gray-800/60 dark:bg-gray-600/70 backdrop-blur-sm">
             <a href="#Beranda" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black"><i class="fa-solid fa-house"></i></a>
@@ -101,10 +101,10 @@
     </div>
     <div class="navpc bg-white/0 fixed top-3 h-12 w-[100%] max-w-[380px]">
         <div class="type justify-center text-center gap-[5em] space-x-3 p-0.5 rounded-full transition-colors bg-gray-800/60 dark:bg-gray-600/70 backdrop-blur-sm">
-            <a href="#Beranda" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Beranda</a>
-            <a href="#Tentang" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Tentang</a>
-            <a href="#Proyek" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Proyek</a>
-            <a href="#Kontak" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Kontak</a>
+            <a href="#Beranda" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Beranda</a>
+            <a href="#Tentang" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Tentang</a>
+            <a href="#Proyek" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Proyek</a>
+            <a href="#Kontak" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Kontak</a>
         </div>
     </div>
     <div
@@ -112,15 +112,16 @@
     </div>
     <div class="begron bg-blue-600 fixed -z-10 w-[60%] h-[60%] rounded-[60%] blur-[30em] left-[-10%] top-[-15%]"></div>
     <div class="max-w-[600px]">
-        <section class="h-[100%]" id="Beranda">  
+        <section id="Beranda"> 
         <br><br><br><br class="navpc"><br class="navpc">
-        <div class="static text-center text-3xl font-bold dark:text-white">Halo 👋, saya Kemal Syabani Adama</div>
+        <img class="items-center justify-center h-[90px] w-[90px] rounded-full bg-gray-400 mx-auto block shadow-blue-400 dark:shadow-blue-700 shadow-xl" src="assets/Kemal Syabani Adama .png" alt=""><br>
+        <div class="static text-center text-3xl font-bold dark:text-white">Halo 👋, saya Kemal Syabani Adama</div></td>
         <div class="text-center text-gray-900 dark:text-gray-100 py-3">pelajar yang ingin menjadi programmer handal</div>
         <br>
         <div class="justify-center text-center space-x-5 border-spacing-y-1 h-1">
-            <a href="https://github.com/kemalsyabaniadama" class="p-3 text-xl rounded-full bg-black/70 text-white"><i
+            <a href="https://github.com/kemalsyabaniadama" class="transition-colors p-3 text-xl rounded-full bg-black/70 text-white hover:bg-white/50 hover:text-black dark:hover:bg-white dark:hover:text-black"><i
                     class="fa-brands fa-github"></i> Github</a><br class="hidden cokk"><br class="hidden cokk">
-            <a href="mailto:kemalsyabani1610@gmail.com" class="p-3 text-xl rounded-full bg-white/50 dark:bg-gray-800/50 dark:text-white"><i
+            <a href="mailto:kemalsyabani1610@gmail.com" class="p-3 text-xl rounded-full bg-white/50 dark:bg-gray-800/50 dark:text-white hover:bg-black/70 hover:text-white dark:hover:bg-white dark:hover:text-black"><i
                     class="fa-solid fa-envelope"></i> Email</a>
         </div>
         </section>
@@ -128,8 +129,7 @@
         <br><br><br><br class="hidden cokk">
         <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
             <div class="text-center text-2xl font-bold dark:text-white">Tentang</div><br>
-            <div class="text-justify text-gray-900 dark:text-gray-100">Saya adalah pelajar SMKN 69 Jakarta, jurusan SIJA (Sistem Informatika Jaringan dan
-                Aplikasi). Saya memiliki ketertarikan pada pengembangan web Front-End dan pengelolaan data. </div>
+            <div class="text-justify text-gray-900 dark:text-gray-100">Saya adalah pelajar SMKN 69 Jakarta, jurusan SIJA (Sistem Informatika Jaringan dan Aplikasi). Saya memiliki ketertarikan pada pengembangan web Front-End dan pengelolaan data. </div>
         </div>
         <br><br>
         <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
@@ -139,56 +139,156 @@
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">C++</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">JavaScript</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Java</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Python</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">HTML</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">CSS</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Node.js</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Tailwind</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Figma</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">VSCode</a>
+            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Canva</a>
             <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">AWS</a>
+            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Office</a>
         </div><br><br><br><br><br><br>
         <div class="text-center text-2xl font-bold dark:text-white">Pendidikan<br>
         </div><br>
-    <table>
-        <tr>
-            <td class="text-gray-900 dark:text-gray-100">2016</td>
-            <td class="px-5 text-gray-900 dark:text-gray-100">
-                <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                    <span class="text-xl font-bold dark:text-white">SDN Pondok Kelapa 05</span>
-                    <div class="text-gray-900 dark:text-gray-100">
-                        Belajar teknologi melalui mata pelajaran TIK, mulai memperbanyak relasi
+        <table>
+            <tr>
+                <td class="text-gray-900 dark:text-gray-100">2014</td>
+                <td class="px-5 text-gray-900 dark:text-gray-100">
+                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+                        <span class="text-xl font-bold dark:text-white">SDN Jatibenting 03</span>
+                        <div class="text-gray-900 dark:text-gray-100">
+                            Sekolah dasar pertama kali, mengenal teman baru dan belajar bersosialisasi
+                        </div>
+                    </div><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-gray-900 dark:text-gray-100">2016</td>
+                <td class="px-5 text-gray-900 dark:text-gray-100">
+                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+                        <span class="text-xl font-bold dark:text-white">SDN Pondok Kelapa 05</span>
+                        <div class="text-gray-900 dark:text-gray-100">
+                            Beradaptasi dengan lingkungan baru dan mulai menekuni belajar
+                        </div>
+                    </div><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-gray-900 dark:text-gray-100">2021</td>
+                <td class="px-5 text-gray-900 dark:text-gray-100">
+                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+                        <span class="text-xl font-bold dark:text-white">SMPN 194 Jakarta</span>
+                        <div class="text-gray-900 dark:text-gray-100">
+                            Belajar teknologi melalui mata pelajaran TIK, mulai memperbanyak relasi, dan ambisi untuk jenjang berikutnya
+                        </div>
+                    </div><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-gray-900 dark:text-gray-100">2024</td>
+                <td class="px-5 text-gray-900 dark:text-gray-100">
+                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+                        <span class="text-xl font-bold dark:text-white">SMKN 69 Jakarta</span>
+                        <div class="text-gray-900 dark:text-gray-100">
+                            Di sini semuanya dimulai, belajar banyak hal tentang dunia IT, berorganisasi, hingga mengelola pikiran dan waktu
+                        </div>
                     </div>
-                </div><br>
-            </td>
-        </tr>
-        <tr>
-            <td class="text-gray-900 dark:text-gray-100">2021</td>
-            <td class="px-5 text-gray-900 dark:text-gray-100">
-                <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                    <span class="text-xl font-bold dark:text-white">SMPN 194 Jakarta</span>
-                    <div class="text-gray-900 dark:text-gray-100">
-                        Belajar teknologi melalui mata pelajaran TIK, mulai memperbanyak relasi, dan ambisi untuk jenjang berikutnya
-                    </div>
-                </div><br>
-            </td>
-        </tr>
-        <tr>
-            <td class="text-gray-900 dark:text-gray-100">2024</td>
-            <td class="px-5 text-gray-900 dark:text-gray-100">
-                <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                    <span class="text-xl font-bold dark:text-white">SMKN 69 Jakarta</span>
-                    <div class="text-gray-900 dark:text-gray-100">
-                        Di sini semuanya dimulai, belajar banyak hal tentang dunia IT, berorganisasi, hingga mengelola pikiran dan waktu
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </table>
+                </td>
+            </tr>
+        </table><br>
+        <div class="text-2xl text-center py-5 font-bold dark:text-white">Kepemimpinan</div>
+        <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+            <span class="text-xl font-bold dark:text-white">PIK-R</span><span class="text-xs text-gray-950 dark:text-gray-50"><i>    (Pusat Informasi Konseling Remaja)</i></span>
+            <div class="text-gray-900 dark:text-gray-100">
+                <span class="font-bold">Bidang Program</span> - Periode 2025/2026<br>Bertanggung jawab dalam pelaksanakan program kerja
+            </div>
+        </div><br>
+         <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+            <span class="text-xl font-bold dark:text-white">OSIS</span><span class="text-xs text-gray-950 dark:text-gray-50"><i>    (Organisasi Siswa Intra Sekolah)</i></span>
+            <div class="text-gray-900 dark:text-gray-100">
+                <span class="font-bold">Sekretaris Umum</span> - Periode 2025/2026<br>Bertanggung jawab dalam urusan administrasi
+            </div>
+        </div><br>
+        <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
+            <span class="text-xl font-bold dark:text-white">IT Club</span>
+            <div class="text-gray-900 dark:text-gray-100">
+                <span class="font-bold">Hubungan Masyarakat</span> - Periode 2025/2026<br>Bertanggung jawab dalam komunikasi eksternal
+            </div>
+        </div>
+        </div>
+        </section>
+    <section class="py-6" id="Proyek">
+        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
+        <div class="text-center text-2xl font-bold dark:text-white py-4">Proyek
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <img src="assets/Spontan.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
+            <div class="p-6">
+                <a class="text-blue-600 dark:text-blue-400 text-sm font-medium">Template</span>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-3">Redesign Blogspot</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Template tema XML Blogger khusus yang dapat dikustomisasi</p>
+                <a href="https://github.com/kemalsyabaniadama/Redesign-Blogspot" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </article>
+        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <img src="assets/Ular Tangga Pahlawan.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
+            <div class="p-6">
+                <a href="https://kemalsyabaniadama.github.io/Ular-Tangga-Pahlawan" class="text-blue-600 dark:text-blue-400 text-sm font-medium">Web</span>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-700 dark:hover:text-blue-400 transition-colors mt-2 mb-3">Ular Tangga Pahlawan</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Permainan ular tangga HTML dengan kuis sejarah</p>
+                <a href="https://github.com/kemalsyabaniadama/Ular-Tangga-Pahlawan" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </article>
+        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <img src="assets/test epg.gif" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
+            <div class="p-6">
+                <a class="text-blue-600 dark:text-blue-400 text-sm font-medium">Workflow</span>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-3">test epg</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">auto-update epg xmltv untuk IPTV Indonesia</p>
+                <a href="https://github.com/kemalsyabaniadama/test-epg" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </article>
+        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <img src="assets/ambanet.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
+            <div class="p-6">
+                <a class="text-blue-600 dark:text-blue-400 text-sm font-medium">Web</span>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-3">ambanet</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Prototipe desain web penyedia layanan internet</p>
+                <a href="https://www.figma.com/design/ze11AeCGD9HqyuBfHW0S2F/Untitled?node-id=0-1&t=edN0sehrrO1H32EZ-1" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-figma"></i></a>
+            </div>
+        </article>
+        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <img src="assets/AltLine.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
+            <div class="p-6">
+                <a href="https://kemalsyabaniadama.github.io/AltLine" class="text-blue-600 dark:text-blue-400 text-sm font-medium">Web</span>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-700 dark:hover:text-blue-400 transition-colors mt-2 mb-3">AltLine</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Website tentang transportasi umum, project web pertama</p>
+                <a href="https://github.com/kemalsyabaniadama/AltLine" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </article>
+        </div>
+        </div>
+        </section>
+        <section class="py-6" id="Kontak">
+        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
+        <div class="text-center text-2xl font-bold dark:text-white py-4">Kontak
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://github.com/kemalsyabaniadama/" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-github"></i><span class="pl-3 text-xl">Github</span></a>
+            <a href="mailto:kemalsyabani1610@gmail.com" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-solid fa-envelope"></i><span class="pl-3 text-xl">Email</span></a>
+        </div>
+        <div class="text-center py-7 dark:text-gray-200 text-gray-800">Saya juga memiliki sosial media berikut</div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://www.facebook.com/profile.php?id=61573837997803" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-facebook"></i><span class="pl-3 text-xl">Facebook</span></a>
+            <a href="https://www.instagram.com/kemalsyabaniadama/" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-instagram"></i><span class="pl-3 text-xl">Instagram</span></a>
+            <a href="https://www.youtube.com/@kemalsyabaniadama" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-youtube"></i><span class="pl-3 text-xl">YouTube</span></a>
+            <a href="https://www.tiktok.com/@kemalsyabaniadama" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-tiktok"></i><span class="pl-3 text-xl">TikTok</span></a>
+            <a href="https://x.com/mcshtfek" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-x-twitter"></i><span class="pl-3 text-xl">X / Twitter</span></a>
+        </div>
     </div>
-    </section>
-    </div>
-    
+    <div class="py-5"></div>
+</section>
 </body>
 <script type="text/javascript">
   (function() {
@@ -265,7 +365,7 @@
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.2 }
   );
 
   sections.forEach((section) => observer.observe(section));
