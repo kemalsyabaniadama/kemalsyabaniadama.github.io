@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Kemal Syabani Adama</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        itemid="head">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" itemid="head">
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -19,11 +19,10 @@
         } else if (savedTheme === 'light') {
             document.documentElement.classList.remove('dark');
         } else {
-            // Tidak ada cache, ikuti preferensi perangkat
             if (systemPrefDark) {
-            document.documentElement.classList.add('dark');
+                document.documentElement.classList.add('dark');
             } else {
-            document.documentElement.classList.remove('dark');
+                document.documentElement.classList.remove('dark');
             }
         }
     </script>
@@ -31,8 +30,8 @@
         html {
             scroll-behavior: smooth;
         }
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+        body { font-family: 'Manrope', sans-serif; }
 
         @media(max-width: 768px) {
             .navmob {
@@ -49,7 +48,6 @@
 
             .bg-blue-600 {
                 background-color: oklch(52.581% 0.26397 265.078);
-                ;
             }
             body {
                 padding-left: 2%;
@@ -77,312 +75,308 @@
         div nav a:hover {
             color: rgb(22, 0, 108);
             text-shadow: rgb(22, 0, 108);
-            ;
         }
     </style>
 </head>
 
-<body class="justify-center items-center flex bg-gray-100 dark:bg-gray-900 transition-colors">
-    <div class="navmob md:hidden bg-white/0 fixed bottom-3 h-12 w-[100%] max-w-[230px]">
-        <div class="type justify-center text-center gap-[15%] space-x-3 p-0.5 rounded-full transition-colors bg-gray-800/60 dark:bg-gray-600/70 backdrop-blur-sm">
-            <a href="#Beranda" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black"><i class="fa-solid fa-house"></i></a>
-            <a href="#Tentang" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black"><i class="fa-solid fa-circle-info"></i></a>
-            <a href="#Proyek" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black"><i class="fa-solid fa-diagram-project"></i></a>
-            <a href="#Kontak" class="p-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black"><i class="fa-solid fa-address-book"></i></a>
+<body class="justify-center items-center flex flex-col bg-gray-100 dark:bg-gray-900 transition-colors min-h-screen">
+    
+    <!-- Mobile Navigation -->
+    <div class="navmob md:hidden bg-white/0 fixed bottom-3 z-50 h-12 w-[100%] max-w-[300px]">
+        <div class="type justify-center text-center gap-[15%] space-x-3 p-0.5 rounded-full transition-colors bg-gray-200/60 dark:bg-gray-600/70 backdrop-blur-sm">
+            <a href="#" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-house"></i></a>
+            <a href="#about" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-circle-info"></i></a>
+            <a href="#serti" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-award"></i></a>
+            <a href="#project" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-diagram-project"></i></a>
+            <a href="#contact" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-address-book"></i></a>
         </div>
     </div>
-    <div class="fixed right-4 top-4">
-        <div class="p-1 rounded-full transition-colors bg-gray-800/60 dark:bg-gray-600/70 backdrop-blur-sm">
-            <button aria-label='Toggle Tema' class='p-2 items-center text-center w-8 h-8 transition-all text-white hover:text-blue-600 dark:hover:text-blue-300 flex right-1 top-1' id='theme-toggle' onclick='cycleTheme()'>
+
+    <!-- Theme Switcher -->
+    <div class="fixed right-4 top-4 z-50">
+        <div class="p-1 rounded-full transition-colors bg-gray-200/60 dark:bg-gray-600/70 backdrop-blur-sm">
+            <button aria-label='Toggle Tema' class='p-2 items-center text-center w-8 h-8 transition-all dark:text-white hover:text-blue-600 dark:hover:text-blue-300 flex right-1 top-1' id='theme-toggle' onclick='cycleTheme()'>
                 <i class='fas fa-desktop' id='theme-icon'></i>
                 <span class='sr-only'>Toggle Tema</span>
             </button>
         </div>
     </div>
-    <div class="navpc bg-white/0 fixed top-3 h-12 w-[100%] max-w-[380px]">
-        <div class="type justify-center text-center gap-[5em] space-x-3 p-0.5 rounded-full transition-colors bg-gray-800/60 dark:bg-gray-600/70 backdrop-blur-sm">
-            <a href="#Beranda" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Beranda</a>
-            <a href="#Tentang" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Tentang</a>
-            <a href="#Proyek" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Proyek</a>
-            <a href="#Kontak" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white text-white hover:text-black">Kontak</a>
+
+    <!-- PC Navigation -->
+    <div class="navpc bg-white/0 fixed top-3 z-50 h-12 w-[100%] max-w-[470px]">
+        <div class="type justify-center text-center gap-[4em] space-x-2 p-0.5 rounded-full transition-colors bg-gray-200/60 dark:bg-gray-600/70 backdrop-blur-sm">
+            <a href="#" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Beranda</a>
+            <a href="#about" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Tentang</a>
+            <a href="#serti" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Sertifikasi</a>
+            <a href="#project" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Proyek</a>
+            <a href="#contact" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Kontak</a>
         </div>
     </div>
-    <div
-        class="begron bg-fuchsia-600 fixed -z-20 w-[60%] h-[60%] rounded-[100%] blur-[30em] right-[-10%] bottom-[-10%]">
-    </div>
+
+    <!-- Background Elements -->
+    <div class="begron bg-cyan-600 fixed -z-20 w-[60%] h-[60%] rounded-[100%] blur-[30em] right-[-10%] bottom-[-10%]"></div>
     <div class="begron bg-blue-600 fixed -z-10 w-[60%] h-[60%] rounded-[60%] blur-[30em] left-[-10%] top-[-15%]"></div>
-    <div class="max-w-[600px]">
-        <section id="Beranda"> 
-        <div class="py-4 md:py-12"></div>
-        <img class="items-center justify-center h-[90px] w-[90px] rounded-full bg-gray-400 mx-auto block shadow-blue-400 dark:shadow-blue-700 shadow-xl" src="assets/Kemal Syabani Adama .png" alt=""><div class="py-3"></div>
-        <div class="static text-center text-3xl font-bold dark:text-white">Halo 👋, saya Kemal Syabani Adama</div></td>
-        <div class="text-center text-gray-900 dark:text-gray-100 py-3">pelajar yang ingin menjadi DevOps | Programmer</div>
-        <div class="py-3"></div>
-        <div class="justify-center text-center space-x-5 border-spacing-y-1 h-1">
-            <a href="https://github.com/kemalsyabaniadama" class="transition-colors p-3 text-xl rounded-full bg-black/70 text-white hover:bg-white/50 hover:text-black dark:hover:bg-white dark:hover:text-black"><i
-                    class="fa-brands fa-github"></i> Github</a>
-            <a href="mailto:kemalsyabani1610@gmail.com" class="p-3 text-xl rounded-full bg-white/50 dark:bg-gray-800/50 dark:text-white hover:bg-black/70 hover:text-white dark:hover:bg-white dark:hover:text-black"><i
-                    class="fa-solid fa-envelope"></i> Email</a>
-        </div>
-        </section>
-        <section id="Tentang">
-        <br><br><br><br class="hidden cokk">
-        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
-            <div class="text-center text-2xl font-bold dark:text-white">Tentang</div><br>
-            <div class="text-justify text-gray-900 dark:text-gray-100">Pelajar SMK Negeri 69 Jakarta jurusan Sistem Informatika, Jaringan, dan Aplikasi (SIJA) dengan peminatan Cloud Computing dan pengembangan web Front End. Gemar mempelajari hal baru dan mudah beradaptasi. Memiliki keahlian dalam menggunakan layanan Cloud, dasar-dasar pengembangan termasuk pembuatan website statis, dan pengalaman administrasi dalam berorganisasi.</div>
-        </div>
-        <div class="py-4"></div>
-        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
-        <div class="text-center text-2xl font-bold dark:text-white py-4">Keahlian<br>
-        </div>
-        <div class="type gap-[5em] text-center space-x-2 border-spacing-y-1 h-1">
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Menggunakan layanan AWS</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Pembuatan web statis</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Pemasangan perangkat lunak</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Konfigurasi jaringan dasar</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Manajemen waktu</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Kerjasama tim</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Komunikasi dasar</a>
-        </div><div class="md:py-24 py-28"></div>
-        <div class="text-center text-2xl font-bold dark:text-white py-4">Bahasa dan Tools <br>
-        </div>
-        <div class="type gap-[5em] text-center space-x-2 border-spacing-y-1 h-1">
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">C++</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Java</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Javascript</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">HTML</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">CSS</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Node.js</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Tailwind</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Figma</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Canva</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">AWS</a>
-            <a class="p-2 rounded-full bg-white/50 dark:bg-gray-500/50 text-gray-900 dark:text-gray-100">Office</a>
-        </div><div class="md:py-18 py-20"></div>
-        <div class="text-center text-2xl font-bold dark:text-white py-5">Pendidikan<br>
-        </div>
-        <table>
-            <tr>
-                <td class="text-gray-900 dark:text-gray-100">2014</td>
-                <td class="px-5 text-gray-900 dark:text-gray-100">
-                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                        <span class="text-xl font-bold dark:text-white">SDN Jatibenting 03</span>
-                        <div class="text-gray-900 dark:text-gray-100">
-                            Sekolah dasar pertama kali, mengenal teman baru dan belajar bersosialisasi
-                        </div>
-                    </div><br>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-gray-900 dark:text-gray-100">2016</td>
-                <td class="px-5 text-gray-900 dark:text-gray-100">
-                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                        <span class="text-xl font-bold dark:text-white">SDN Pondok Kelapa 05</span>
-                        <div class="text-gray-900 dark:text-gray-100">
-                            Beradaptasi dengan lingkungan baru dan mulai menekuni belajar
-                        </div>
-                    </div><br>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-gray-900 dark:text-gray-100">2021</td>
-                <td class="px-5 text-gray-900 dark:text-gray-100">
-                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                        <span class="text-xl font-bold dark:text-white">SMPN 194 Jakarta</span>
-                        <div class="text-gray-900 dark:text-gray-100">
-                            Belajar teknologi melalui mata pelajaran TIK, mulai memperbanyak relasi, dan ambisi untuk jenjang berikutnya
-                        </div>
-                    </div><br>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-gray-900 dark:text-gray-100">2024</td>
-                <td class="px-5 text-gray-900 dark:text-gray-100">
-                    <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-                        <span class="text-xl font-bold dark:text-white">SMKN 69 Jakarta</span>
-                        <div class="text-gray-900 dark:text-gray-100">
-                            Belajar banyak hal tentang dunia IT melalui mata pelajaran jurusan, berorganisasi, hingga mengelola pikiran dan waktu
-                        </div>
+
+    <div class="w-[98%] max-w-6xl mx-auto flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="mt-20 text-gray-800 dark:text-white text-sm md:text-base md:text-left text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+                <div>
+                    <p class="text-blue-600 dark:text-blue-300 text-xl font-semibold">Halo semuanya 👋, saya</p>
+                    <h1 class="text-4xl md:text-6xl font-bold">Kemal Syabani Adama</h1>
+                    <p class="mt-4 text-lg md:text-xl">Seorang pelajar yang ingin mengembangkan diri pada DevOps dan IT Support</p>
+                    <div class="gap-3 mt-5 space-x-2 p-0.5">
+                        <a class="p-3 w-3 scroll-mt-24 rounded-full transition-colors bg-white/50 dark:bg-gray-600/50 dark:hover:bg-gray-600 hover:bg-white dark:text-white dark:hover:text-white hover:text-black text-xl" href="https://github.com/kemalsyabaniadama" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="p-3 w-3 scroll-mt-24 rounded-full transition-colors bg-white/50 dark:bg-gray-600/50 dark:hover:bg-gray-600 hover:bg-white dark:text-white dark:hover:text-white hover:text-black text-xl" href="https://www.instagram.com/kemalsyabaniadama/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="p-3 w-3 scroll-mt-24 rounded-full transition-colors bg-white/50 dark:bg-gray-600/50 dark:hover:bg-gray-600 hover:bg-white dark:text-white dark:hover:text-white hover:text-black text-xl" href="mailto:kemalsyabani1610@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
                     </div>
-                </td>
-            </tr>
-        </table><div class="py-3"></div>
-        <div class="text-2xl text-center py-5 font-bold dark:text-white">Kepemimpinan</div>
-        <div class="grid gap-7">
-        <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-            <span class="text-xl font-bold dark:text-white">PIK-R</span><span class="text-xs text-gray-950 dark:text-gray-50"><i>    (Pusat Informasi Konseling Remaja)</i></span>
-            <div class="text-gray-900 dark:text-gray-100">
-                <span class="font-bold">Bidang Program</span> - Periode 2025/2026<br>Bertanggung jawab dalam pelaksanakan program kerja
+                </div>
+                <div>
+                    <img src="assets/Kemal Syabani Adama .png" alt="Foto Kemal Syabani Adama" class="w-[40%] md:w-[60%] mx-auto drop-shadow-amber-300 drop-shadow-2xl">
+                </div>
             </div>
-        </div>
-         <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-            <span class="text-xl font-bold dark:text-white">OSIS</span><span class="text-xs text-gray-950 dark:text-gray-50"><i>    (Organisasi Siswa Intra Sekolah)</i></span>
-            <div class="text-gray-900 dark:text-gray-100">
-                <span class="font-bold">Sekretaris Umum</span> - Periode 2025/2026<br>Bertanggung jawab dalam urusan administrasi
-            </div>
-        </div>
-        <div class="bg-white/50 dark:bg-gray-500/50 rounded-3xl p-[1em]">
-            <span class="text-xl font-bold dark:text-white">IT Club</span>
-            <div class="text-gray-900 dark:text-gray-100">
-                <span class="font-bold">Humas & Ketua Divisi Cloud Computing</span> - Periode 2026/2027<br>Bertanggung jawab komunikasi eksternal dan pengajaran divisi cloud computing
-            </div>
-        </div>
-        </div>
         </section>
-    <section class="py-6" id="Proyek">
-        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
-        <div class="text-center text-2xl font-bold dark:text-white py-4">Proyek
-        </div>
-        <div class="grid md:grid-cols-2 gap-8">
-        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img src="assets/Spontan.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
-            <div class="p-6">
-                <a class="text-blue-600 dark:text-blue-400 text-sm font-medium">Template</span>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-3">Redesign Blogspot</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Template tema XML Blogger khusus yang dapat dikustomisasi</p>
-                <a href="https://github.com/kemalsyabaniadama/Redesign-Blogspot" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </article>
-        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img src="assets/Ular Tangga Pahlawan.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
-            <div class="p-6">
-                <a href="https://kemalsyabaniadama.github.io/Ular-Tangga-Pahlawan" class="text-blue-600 dark:text-blue-400 text-sm font-medium">Web</span>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-700 dark:hover:text-blue-400 transition-colors mt-2 mb-3">Ular Tangga Pahlawan</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Permainan ular tangga HTML dengan kuis sejarah</p>
-                <a href="https://github.com/kemalsyabaniadama/Ular-Tangga-Pahlawan" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </article>
-        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img src="assets/test epg.gif" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
-            <div class="p-6">
-                <a class="text-blue-600 dark:text-blue-400 text-sm font-medium">Workflow</span>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-3">test epg</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">auto-update epg xmltv untuk IPTV Indonesia</p>
-                <a href="https://github.com/kemalsyabaniadama/test-epg" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </article>
-        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img src="assets/ambanet.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
-            <div class="p-6">
-                <a class="text-blue-600 dark:text-blue-400 text-sm font-medium">Web</span>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mt-2 mb-3">ambanet</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Prototipe desain web penyedia layanan internet</p>
-                <a href="https://www.figma.com/design/ze11AeCGD9HqyuBfHW0S2F/Untitled?node-id=0-1&t=edN0sehrrO1H32EZ-1" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-figma"></i></a>
-            </div>
-        </article>
-        <article class="bg-white/50 dark:bg-gray-500/50 rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img src="assets/AltLine.png" class="max-h-48 w-full h-auto m-auto object-cover block items-center justify-center">
-            <div class="p-6">
-                <a href="https://kemalsyabaniadama.github.io/AltLine" class="text-blue-600 dark:text-blue-400 text-sm font-medium">Web</span>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-700 dark:hover:text-blue-400 transition-colors mt-2 mb-3">AltLine</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">Website tentang transportasi umum, project web pertama</p>
-                <a href="https://github.com/kemalsyabaniadama/AltLine" class="text-xl text-blue-600 dark:text-blue-400 hover:text-blue-800 font-medium"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </article>
-        </div>
-        </div>
-        </section>
-        <section class="py-6" id="Kontak">
-        <div class="bg-white/50 dark:bg-gray-800/50 rounded-3xl p-[2em]">
-        <div class="text-center text-2xl font-bold dark:text-white py-4">Kontak</div>
-        <div class="text-center pb-5 dark:text-gray-200 text-gray-800">Saya dapat dijangkau melalui media berikut</div>
-        <div class="grid md:grid-cols-2 gap-8">
-            <a href="https://github.com/kemalsyabaniadama/" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-github"></i><span class="pl-3 text-xl">Github</span></a>
-            <a href="mailto:kemalsyabani1610@gmail.com" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-solid fa-envelope"></i><span class="pl-3 text-xl">Email</span></a>
-            <a href="https://www.facebook.com/profile.php?id=61573837997803" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-facebook"></i><span class="pl-3 text-xl">Facebook</span></a>
-            <a href="https://www.instagram.com/kemalsyabaniadama/" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-instagram"></i><span class="pl-3 text-xl">Instagram</span></a>
-            <a href="https://www.youtube.com/@kemalsyabaniadama" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-youtube"></i><span class="pl-3 text-xl">YouTube</span></a>
-            <a href="https://www.tiktok.com/@kemalsyabaniadama" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-tiktok"></i><span class="pl-3 text-xl">TikTok</span></a>
-            <a href="https://x.com/mcshtfek" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-x-twitter"></i><span class="pl-3 text-xl">X / Twitter</span></a>
-            <a href="https://stackoverflow.com/users/29394201/kemalsyabaniadama" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-stack-overflow"></i><span class="pl-3 text-xl">Stack Overflow</span></a>
-            <a href="https://www.linkedin.com/in/kemal-syabani-adama-143705393/" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-linkedin"></i><span class="pl-3 text-xl">LinkedIn</span></a>
-            <a href="https://id.wikipedia.org/wiki/Pengguna:Kemal16" class="p-3 rounded-full text-3xl items-center transition-colors hover:bg-black/70 dark:hover:bg-white dark:hover:text-black text-black dark:text-white hover:text-white bg-white/50 dark:bg-gray-500/50"><i class="fa-brands fa-wikipedia-w"></i><span class="pl-3 text-xl">Wikipedia</span></a>
 
-        </div>
+        <!-- Section Tentang Saya & Timeline -->
+        <section id="about" class="mt-28 text-gray-800 dark:text-white scroll-mt-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Tentang Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+            <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-lg border border-white/20 dark:border-gray-700/30">
+                <p class="text-base md:text-lg leading-relaxed mb-8 text-center md:text-left">
+                    Saya berminat pada dunia pemrograman dan perkembangan dunia teknologi. Aktif mengikuti kegiatan pelatihan seputar Cloud Computing dan pemrograman.
+                </p>
+                </div>
+                <div>
+                
+                <!-- Timeline Container -->
+                <div class="relative border-l-2 border-blue-500/50 dark:border-blue-400/50 ml-3 md:ml-6 space-y-8">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-6">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 dark:bg-blue-400 border-4 border-white dark:border-gray-900"></div>
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300">2024 - Sekarang</span>
+                        <h4 class="text-lg font-semibold mt-1">Sistem Informasi Jaringan dan Aplikasi</h4>
+                        <p class="text-sm opacity-80">SMK Negeri 69 Jakarta</p>
+                        <p class="text-sm mt-2">Mempelajari konfigurasi jaringan dasar, pemrograman, serta dasar-dasar Cloud Computing.</p>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Frontend Web Development</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">HTML</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">CSS</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Cloud Computing (basic)</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Amazon Web Services (AWS)</span>
+                    </div>
+                </div>
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Programming Tools</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Visual Studio Code</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Git & GitHub</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Node.js</span>
+                    </div>
+                </div>
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Networking & System Tools</h3>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Cisco Packet Tracer</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Wireshark</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">MikroTik RouterOS</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">VirtualBox</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Ventoy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Sertifikasi -->
+        <section id="serti" class="mt-28 text-gray-800 dark:text-white scroll-mt-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Sertifikasi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Peserta Kegiatan I Am Okay Goes to School with UT Youth Movement</h3>
+                    <p class="text-sm opacity-75 mb-3">Penerbit: PT United Tractors Tbk</p>
+                    <p class="text-xs opacity-60">Diterbitkan: Sept 2025</p>
+                    <a href="assets/Peserta I Am Okay GTS x United Tractors.pdf" target="_blank" class="inline-block mt-4 text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                        Lihat Sertifikat <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Peserta Webinar Jakarta Solid</h3>
+                    <p class="text-sm opacity-75 mb-3">Penerbit: Dinas Komunikasi, Informatika dan Statistik Provinsi DKI Jakarta</p>
+                    <p class="text-xs opacity-60">Diterbitkan: Mei 2026</p>
+                    <a href="assets/Peserta Jakarta Solid.pdf" target="_blank" class="inline-block mt-4 text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                        Lihat Sertifikat <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Card Sertifikat 1 -->
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Berinovasi dengan AI</h3>
+                    <p class="text-sm opacity-75 mb-3">Penerbit: Yayasan Plan International Indonesia</p>
+                    <p class="text-xs opacity-60">Diterbitkan: Sep 2026</p>
+                    <a href="assets/Completion Berinovasi dengan AI.pdf" target="_blank" class="inline-block mt-4 text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                        Lihat Sertifikat <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Card Sertifikat 2 (Dummy) -->
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Spec-Driven Development dengan Kiro</h3>
+                    <p class="text-sm opacity-75 mb-3">Penerbit: Dicoding dan AWS</p>
+                    <p class="text-xs opacity-60">Diterbitkan: Okt 2026 (berlaku hingga: Okt 2029)</p>
+                    <a href="assets/Completion Spec-Driven Development.pdf" target="_blank" class="inline-block mt-4 text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                        Lihat Sertifikat <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Card Sertifikat 3 (Dummy) -->
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/20 dark:border-gray-700/30 hover:scale-[1.02] transition-transform duration-300">
+                    <h3 class="text-lg font-bold mb-1">Belajar Dasar Cloud dan Gen AI di AWS</h3>
+                    <p class="text-sm opacity-75 mb-3">Penerbit: Dicoding dan AWS</p>
+                    <p class="text-xs opacity-60">Diterbitkan: Okt 2026 (berlaku hingga: Okt 2029)</p>
+                    <a href="assets/Completion Belajar Dasar Cloud dan Gen AI di AWS.pdf" target="_blank" class="inline-block mt-4 text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                        Lihat Sertifikat <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Proyek -->
+        <section id="project" class="mt-28 text-gray-800 dark:text-white scroll-mt-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Proyek</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                (sedang dalam pengembangan)
+            </div>
+        </section>
+
+        <!-- Section Kontak & Media Sosial -->
+        <section id="contact" class="mt-28 mb-16 text-gray-800 dark:text-white scroll-mt-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Hubungi Saya</h2>
+            <div class="max-w-2xl mx-auto bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-lg border border-white/20 dark:border-gray-700/30 text-center">
+                <p class="text-base md:text-lg mb-6">
+                    Tertarik untuk berkolaborasi, berdiskusi seputar DevOps & IT Support, atau sekadar ingin menyapa? Silakan hubungi saya melalui media sosial di bawah ini.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:kemalsyabani1610@gmail.com" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-gray-700/60 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-all shadow-sm">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/kemalsyabaniadama" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-gray-700/60 hover:bg-gray-900 hover:text-white dark:hover:bg-gray-900 transition-all shadow-sm">
+                        <i class="fa-brands fa-github text-lg"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/kemalsyabaniadama/" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-gray-700/60 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 transition-all shadow-sm">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kemal-syabani-adama-143705393/" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-gray-700/60 hover:bg-blue-700 hover:text-white dark:hover:bg-blue-700 transition-all shadow-sm">
+                        <i class="fa-brands fa-linkedin text-lg"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="py-5"></div>
-</section>
-</body>
-<script type="text/javascript">
-  (function() {
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const systemPref = window.matchMedia('(prefers-color-scheme: dark)');
-    let currentTheme = localStorage.getItem('theme') || 'system';
 
-    function applyTheme(mode) {
-      if (mode === 'dark') {
-        document.documentElement.classList.add('dark');
-        themeIcon.className = 'fas fa-moon';
-      } else if (mode === 'light') {
-        document.documentElement.classList.remove('dark');
-        themeIcon.className = 'fas fa-sun';
-      } else {
-        // system mode
-        if (systemPref.matches) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-        themeIcon.className = 'fas fa-desktop';
-      }
-    }
+    <!-- Footer -->
+    <footer class="w-full border-t border-gray-300/40 dark:border-gray-800/60 py-6 text-center text-sm text-gray-600 dark:text-gray-400 bg-white/20 dark:bg-gray-900/40 backdrop-blur-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>kemalsyabaniadama</p>
+        </div>
+    </footer>
 
-    function cycleTheme() {
-      if (currentTheme === 'system') {
-        currentTheme = 'light';
-        localStorage.setItem('theme', 'light');
-      } else if (currentTheme === 'light') {
-        currentTheme = 'dark';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        currentTheme = 'system';
-        localStorage.removeItem('theme');
-      }
-      applyTheme(currentTheme);
-    }
+    <script type="text/javascript">
+      (function() {
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const systemPref = window.matchMedia('(prefers-color-scheme: dark)');
+        let currentTheme = localStorage.getItem('theme') || 'system';
 
-    // tombol di navbar
-    window.cycleTheme = cycleTheme;
-
-    // jalankan pertama kali
-    applyTheme(currentTheme);
-
-    // auto update kalau system mode
-    systemPref.addEventListener('change', () => {
-      if (currentTheme === 'system') {
-        applyTheme('system');
-      }
-    });
-  })();
-
-  document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".navpc a, .navmob a");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // hapus semua active
-          navLinks.forEach((link) => link.classList.remove("active"));
-
-          // cari link yang sesuai dengan id section
-          const id = entry.target.getAttribute("id");
-          const activeLink = document.querySelector(
-            `.navpc a[href="#${id}"], .navmob a[href="#${id}"]`
-          );
-          if (activeLink) {
-            activeLink.classList.add("active");
+        function applyTheme(mode) {
+          if (mode === 'dark') {
+            document.documentElement.classList.add('dark');
+            themeIcon.className = 'fas fa-moon';
+          } else if (mode === 'light') {
+            document.documentElement.classList.remove('dark');
+            themeIcon.className = 'fas fa-sun';
+          } else {
+            if (systemPref.matches) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+            themeIcon.className = 'fas fa-desktop';
           }
         }
-      });
-    },
-    { threshold: 0.2 }
-  );
 
-  sections.forEach((section) => observer.observe(section));
-});
-</script>
+        function cycleTheme() {
+          if (currentTheme === 'system') {
+            currentTheme = 'light';
+            localStorage.setItem('theme', 'light');
+          } else if (currentTheme === 'light') {
+            currentTheme = 'dark';
+            localStorage.setItem('theme', 'dark');
+          } else {
+            currentTheme = 'system';
+            localStorage.removeItem('theme');
+          }
+          applyTheme(currentTheme);
+        }
+
+        window.cycleTheme = cycleTheme;
+        applyTheme(currentTheme);
+
+        systemPref.addEventListener('change', () => {
+          if (currentTheme === 'system') {
+            applyTheme('system');
+          }
+        });
+      })();
+
+      document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".navpc a, .navmob a");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => link.classList.remove("active"));
+
+              const id = entry.target.getAttribute("id");
+              const activeLink = document.querySelector(
+                `.navpc a[href="#${id}"], .navmob a[href="#${id}"]`
+              );
+              if (activeLink) {
+                activeLink.classList.add("active");
+              }
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    });
+    </script>
+</body>
 </html>
-
