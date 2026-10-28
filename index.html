@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Kemal Syabani Adama</title>
+    <title>Kemal Syabani Adama</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" itemid="head">
     <script>
         tailwind.config = {
@@ -30,8 +33,8 @@
         html {
             scroll-behavior: smooth;
         }
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-        body { font-family: 'Manrope', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap');
+        body { font-family: 'DM Sans', sans-serif; }
 
         @media(max-width: 768px) {
             .navmob {
@@ -84,7 +87,7 @@
     <!-- Mobile Navigation -->
     <div class="navmob md:hidden bg-white/0 fixed bottom-3 z-50 h-12 w-[100%] max-w-[300px]">
         <div class="type justify-center text-center gap-[15%] space-x-3 p-0.5 rounded-full transition-colors bg-gray-200/60 dark:bg-gray-600/70 backdrop-blur-sm">
-            <a href="#" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-house"></i></a>
+            <a href="#home" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-house"></i></a>
             <a href="#about" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-circle-info"></i></a>
             <a href="#serti" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-award"></i></a>
             <a href="#project" class="p-3 w-3 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black"><i class="fa-solid fa-diagram-project"></i></a>
@@ -105,7 +108,7 @@
     <!-- PC Navigation -->
     <div class="navpc bg-white/0 fixed top-3 z-50 h-12 w-[100%] max-w-[470px]">
         <div class="type justify-center text-center gap-[4em] space-x-2 p-0.5 rounded-full transition-colors bg-gray-200/60 dark:bg-gray-600/70 backdrop-blur-sm">
-            <a href="#" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Beranda</a>
+            <a href="#home" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Beranda</a>
             <a href="#about" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Tentang</a>
             <a href="#serti" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Sertifikasi</a>
             <a href="#project" class="p-3 scroll-mt-24 rounded-full transition-colors bg-gray-800/0 hover:bg-white dark:text-white dark:hover:text-black hover:text-black">Proyek</a>
@@ -149,7 +152,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
             <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-lg border border-white/20 dark:border-gray-700/30">
                 <p class="text-base md:text-lg leading-relaxed mb-8 text-center md:text-left">
-                    Saya berminat pada dunia pemrograman dan perkembangan dunia teknologi. Aktif mengikuti kegiatan pelatihan seputar Cloud Computing dan pemrograman.
+                    Saya berminat pada bidang pemrograman dan perkembangan dunia teknologi. Aktif mengikuti kegiatan pelatihan seputar Cloud Computing dan pemrograman.
                 </p>
                 </div>
                 <div>
@@ -264,7 +267,135 @@
         <section id="project" class="mt-28 text-gray-800 dark:text-white scroll-mt-20">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Proyek</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                (sedang dalam pengembangan)
+
+
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-gray-700/30 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+                    <div>
+                        <img src="assets/FixinKomp.png" class="h-60 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-800 dark:text-green-300">Aktif</span>
+                            <h3 class="text-xl font-bold mb-2 mt-2">FixinKomp</h3>
+                            <p class="text-sm opacity-80 mb-4">Website company profile FixinKomp (fiktif) dengan Content Management System. Proyek dalam pelatihan kompetensi web development.</p>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Tailwind CSS</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">React.js + Vite</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 space-x-5">
+                        <a href="https://github.com/kemalsyabaniadama/FixinKomp" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            <i class="fa-brands fa-github mr-2"></i>Repositori
+                        </a>
+                        <a href="https://fixinkomp.vercel.app" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            Link
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-gray-700/30 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+                    <div>
+                        <img src="assets/Peraturan Lab Komputer Wallpaper.png" class="h-60 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs px-2 py-1 rounded-full bg-gray-500/20 text-gray-800 dark:text-gray-300">Satu Waktu</span>
+                            <h3 class="text-xl font-bold mb-2 mt-2">Instalasi Ulang PC Lab Komputer Sekolah</h3>
+                            <p class="text-sm opacity-80 mb-4">Memasang ulang Windows dan driver perangkat keras di laboratorium komputer sekolah.</p>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Ventoy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-gray-700/30 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+                    <div>
+                        <img src="assets/test epg.gif" class="h-60 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs px-2 py-1 rounded-full bg-red-500/20 text-red-800 dark:text-red-300">Dalam Pengembangan</span>
+                            <h3 class="text-xl font-bold mb-2 mt-2">Test-EPG</h3>
+                            <p class="text-sm opacity-80 mb-4">Workflow GitHub Actions untuk menghasilkan file XML EPG jadwal siaran televisi Indonesia.</p>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Node.js</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Git</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">GitHub Actions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 space-x-5">
+                        <a href="https://github.com/kemalsyabaniadama/test-epg" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            <i class="fa-brands fa-github mr-2"></i>Repositori
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-gray-700/30 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+                    <div>
+                        <img src="assets/Spontan.png" class="h-60 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-800 dark:text-green-300">Aktif</span>
+                            <h3 class="text-xl font-bold mb-2 mt-2">Redesign Blogspot</h3>
+                            <p class="text-sm opacity-80 mb-4">Template XML blogger untuk merancang ulang tampilan blogspot, dengan isi konten yang dapat disesuaikan.</p>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">HTML</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Tailwind CSS</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 space-x-5">
+                        <a href="https://github.com/kemalsyabaniadama/Redesign-Blogspot" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            <i class="fa-brands fa-github mr-2"></i>Repositori
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-gray-700/30 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+                    <div>
+                        <img src="assets/Portofolio-Web.png" class="h-60 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-800 dark:text-green-300">Aktif</span>
+                            <h3 class="text-xl font-bold mb-2 mt-2">Website Portofolio Kemal</h3>
+                            <p class="text-sm opacity-80 mb-4">Website portofolio pribadi. Berisi informasi tentang pengalaman dan keterampilan, serta media sosial Kemal Syabani Adama.</p>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">HTML</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">Tailwind CSS</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 space-x-5">
+                        <a href="https://github.com/kemalsyabaniadama/kemalsyabaniadama.github.io" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            <i class="fa-brands fa-github mr-2"></i>Repositori
+                        </a>
+                        <a href="https://kemalsyabaniadama.github.io" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            Link
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-gray-700/30 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300">
+                    <div>
+                        <img src="assets/AltLine.png" class="h-60 object-cover">
+                        <div class="p-5">
+                            <span class="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-800 dark:text-green-300">Aktif</span>
+                            <h3 class="text-xl font-bold mb-2 mt-2">AltLine</h3>
+                            <p class="text-sm opacity-80 mb-4">Website statis informasi seputar transportasi umum. Proyek pertama saya dalam tahap awal pembelajaran pengembangan web.</p>
+                            <div class="flex flex-wrap gap-1.5 mb-4">
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">HTML</span>
+                                <span class="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-800 dark:text-blue-300">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 space-x-5">
+                        <a href="https://github.com/kemalsyabaniadama/AltLine" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            <i class="fa-brands fa-github mr-2"></i>Repositori
+                        </a>
+                        <a href="https://kemalsyabaniadama.github.io/AltLine" target="_blank" class="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-300 hover:underline">
+                            Link
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -273,7 +404,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Hubungi Saya</h2>
             <div class="max-w-2xl mx-auto bg-white/40 dark:bg-gray-800/40 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-lg border border-white/20 dark:border-gray-700/30 text-center">
                 <p class="text-base md:text-lg mb-6">
-                    Tertarik untuk berkolaborasi, berdiskusi seputar DevOps & IT Support, atau sekadar ingin menyapa? Silakan hubungi saya melalui media sosial di bawah ini.
+                    Tertarik untuk berkolaborasi, berdiskusi, atau sekadar ingin menyapa? Silakan hubungi saya melalui media sosial di bawah ini.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="mailto:kemalsyabani1610@gmail.com" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-gray-700/60 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-all shadow-sm">
